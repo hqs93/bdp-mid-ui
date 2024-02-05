@@ -13,7 +13,7 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
   // }
   return {
     server: {
-      port: 3100
+      port: 3200
     },
     css: {
       // css预处理器
@@ -27,12 +27,12 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
     plugins: [vue()],
     build: {
       rollupOptions: {
-        external: ['ant-design-vue-v2.2.0', 'vue']
+        external: ['ant-design-vue-v3.2.2', 'vue']
       },
       lib: {
         entry: path.resolve(__dirname, './components/index.ts'),
         name: 'bdpUi',
-        fileName: 'bdp-ant-design-vue-v2.2.0',
+        fileName: 'ant-design-vue-v3.2.2',
         formats: ['es', 'cjs', 'umd', 'iife']
       }
     },

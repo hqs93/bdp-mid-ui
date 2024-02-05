@@ -9,32 +9,32 @@ const chalk = require('chalk')
 const fsPromise = require('fs').promises
 
 /* 这三个都是发布平台环境变量
-* RELEASE_VERSION 发布的版本号
+* npm_package_version 发布的版本号
 * GIT_BRANCH 当前git的分支
 * DIST_TAG 发布的版本beta/latest/pre
 */
-let { RELEASE_VERSION, GIT_BRANCH, DIST_TAG } = process.env
+let { npm_package_version, GIT_BRANCH, DIST_TAG } = process.env
 const makeResolve = (target) => (...args) => path.resolve(__dirname, `../packages/${target}`, ...args)
-console.log(111, RELEASE_VERSION);
-if (RELEASE_VERSION.includes('beta')) {
-  DIST_TAG = 'beta'
-} else if (RELEASE_VERSION.includes('rc')) {
-  DIST_TAG = 'rc'
-} else {
-  DIST_TAG = 'latest'
-}
+// if (RELEASE_VERSION.includes('beta')) {
+//   DIST_TAG = 'beta'
+// } else if (RELEASE_VERSION.includes('rc')) {
+//   DIST_TAG = 'rc'
+// } else {
+//   DIST_TAG = 'latest'
+// }
 
 // 修改所有packages的版本号
 async function changeVersion () {
-  console.log(chalk.blue('更改版本号'))
+  console.log(chalk.blue('更改版本号', npm_package_version))
   const projectPath = path.resolve(__dirname, '../packages')
   const targets = await fsPromise.readdir(projectPath)
+  console.log(111, targets);
   for (let target of targets) {
     const resolve = makeResolve(target)
     const packagePath = resolve('package.json')
 
     const packageJSON = require(packagePath)
-    packageJSON.version = RELEASE_VERSION
+    packageJSON.version = npm_package_version
 
     fs.writeFileSync(packagePath, JSON.stringify(packageJSON, null, 2))
   }
@@ -43,7 +43,7 @@ async function changeVersion () {
 // 将修改后的版本号提交到gitlab
 async function commit () {
   await execa('git', ['add', '.'])
-  await execa('git', ['commit', '-m', RELEASE_VERSION])
+  await execa('git', ['commit', '-m', npm_package_version])
   // NOTE 不需要 push，xbird在流程走完后会统一push
   // await execa('git', ['push','origin', GIT_BRANCH])
 }
@@ -65,8 +65,8 @@ async function publish () {
 
 async function start () {
   changeVersion()
-  // await commit()
-  await publish()
+  await commit()
+  // await publish()
 }
 
 start()

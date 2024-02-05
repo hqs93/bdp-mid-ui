@@ -4,7 +4,7 @@ layout: home
 hero:
   name: bdp-lib-ui
   text: 前端组件库
-  tagline: 基于 ant-design-vue 、 element-plus 、 ant-design 框架进行功能扩展，提供更接近业务场景的组件。
+  tagline: 基于 ant-design-vue-v3.2.2 、 element-plus 、 ant-design 框架进行功能扩展，提供更接近业务场景的组件。
   image:
     src: /images/bdp-lib-icon.svg
   actions:
