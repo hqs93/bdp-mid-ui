@@ -82,9 +82,9 @@ const decoded = computed(() => {
 })
 
 const baseUrl = {
-  'element-plus': import.meta.env.VITE_ELP_DEV_BASE,
-  'element-ui': import.meta.env.VITE_ELU_DEV_BASE,
-  'ant-design': import.meta.env.VITE_ANT_DEV_BASE
+  'ant-design-vue-v2.2.0': import.meta.env.VITE_ANTV2_DEV_BASE,
+  'ant-design-vue-v3.2.2': import.meta.env.VITE_ANTV3_DEV_BASE,
+  'shared': import.meta.env.VITE_SHARED_DEV_BASE
 }
 
 const iconColorArr = [{ name: '', color: '#fe5f57' }, { name: '', color: '#ffbc2d' }, { name: 'scale', color: '#27c83e' }]

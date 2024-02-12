@@ -7,6 +7,8 @@ test/scripts/cypress/results
 test/scripts/cypress/support
 results/
 site/dist
+docs/dist
+packages/**/dist
 .idea
 es
 lib
@@ -27,3 +29,4 @@ instrumented
 cy-report
 # Local Netlify folder
 .netlify
+/dist/

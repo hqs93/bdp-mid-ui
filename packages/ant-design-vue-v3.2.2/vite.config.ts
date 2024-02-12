@@ -1,4 +1,4 @@
-import path, { resolve } from "path";
+import { resolve } from "path";
 import vue from '@vitejs/plugin-vue'
 import { Alias, ConfigEnv, defineConfig, UserConfig } from "vite";
 import {alias} from '../../scripts'
@@ -20,26 +20,28 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
       preprocessorOptions: {
         less: {
           javascriptEnabled: true,
-          hack: `@import "${path.resolve(__dirname, 'theme/dfm.less')}";`
+          hack: `@import "${resolve(__dirname, 'theme/dfm.less')}";`
         },
       },
     },
     plugins: [vue()],
+    base: './',
     build: {
       rollupOptions: {
-        external: ['ant-design-vue-v3.2.2', 'vue']
+        external: ['ant-design-vue', 'vue', 'xe-utils']
       },
       lib: {
-        entry: path.resolve(__dirname, './components/index.ts'),
+        entry: resolve(__dirname, './components/index.ts'),
         name: 'bdpUi',
-        fileName: 'ant-design-vue-v3.2.2',
+        fileName: 'bdp-ant-design-vue-v3.2.2',
         formats: ['es', 'cjs', 'umd', 'iife']
-      }
+      },
+      outDir: '../../dist/bdp-ant-design-vue-v3.2.2',
     },
     resolve: {
       alias: [
-        ...await alias() as Alias[],
-        { find: /^~/, replacement: '' }
+        ...await alias() as Alias[]
+        // { find: /^~/, replacement: '' }
       ],
     },
     // ...docsBuild

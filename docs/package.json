@@ -1,6 +1,6 @@
 {
-  "name": "@bdp-lib-ui/docs",
-  "version": "1.0.1",
+  "name": "@bdp-common-ui/docs",
+  "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.6",
-    "@bdp-lib-ui/element-plus": "workspace:*",
+    "@much-more/vc-element-plus": "workspace:*",
     "@vueuse/core": "^8.7.5",
     "element-plus": "^2.2.8",
     "less": "^4.1.3",

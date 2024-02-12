@@ -1,4 +1,4 @@
-# 使用 `bdp-element-plus`
+# 使用 `vc-element-plus`
 
 本节将介绍如何在项目中使用 Vc Element Plus。
 
@@ -24,13 +24,13 @@ pnpm install xxx
 
 ## 快速开始
 ### 1. 完整引入
-`bdp-element-plus` 将会在Vue应用中进行**全局组件注册**。
+`vc-element-plus` 将会在Vue应用中进行**全局组件注册**。
 
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import VcElementPlus from '@bdp-element-plus'
-import '@bdp-element-plus/dist/style.css'
+import VcElementPlus from '@vc-element-plus'
+import '@vc-element-plus/dist/style.css'
 
 const app = createApp(App)
 
@@ -42,13 +42,13 @@ app.use(VcElementPlus)
 ```html
 <!-- App.vue -->
 <template>
-  <bdp-table>
+  <vc-table>
     <el-table-column ... />
-  </bdp-table>
+  </vc-table>
 </template>
 
 <script setup>
-  import { VcTable } from '@bdp-element-plus'
+  import { VcTable } from '@vc-element-plus'
 </script>
 ```
 

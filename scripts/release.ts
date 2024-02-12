@@ -9,7 +9,7 @@ const chalk = require('chalk')
 const fsPromise = require('fs').promises
 
 /* 这三个都是发布平台环境变量
-* npm_package_version 发布的版本号根据 bdp-lib-ui/package.json 的version字段
+* npm_package_version 发布的版本号根据 bdp-common-ui/package.json 的version字段
 * GIT_BRANCH 当前git的分支
 * DIST_TAG 发布的版本beta/latest/pre
 */

@@ -1,4 +1,4 @@
 export default {
-  message: 'bdp-lib-ui',
-  // copyright: 'Copyright © 2022-present hqs'
+  message: 'bdp-common-ui',
+  // copyright: 'Copyright © 2024-present xxx'
 }

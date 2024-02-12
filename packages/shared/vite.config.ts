@@ -7,16 +7,18 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
     server: {
       port: 3300
     },
+    base: './',
     build: {
       rollupOptions: {
-        external: ['vue']
+        external: ['vue', 'ts-md5']
       },
       lib: {
         entry: path.resolve(__dirname, './index.ts'),
-        name: 'bdpShared',
+        name: 'bdpUi',
         fileName: 'bdp-shared',
         formats: ['es', 'cjs', 'umd', 'iife']
-      }
+      },
+      outDir: '../../dist/bdp-shared',
     },
     resolve: {
       alias: await alias()

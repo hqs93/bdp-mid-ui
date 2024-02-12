@@ -8,10 +8,9 @@ export function packagesPath () {
 export async function alias () {
   const projectPath = packagesPath()
   const dirArr = await fsPromises.readdir(projectPath)
-
   return dirArr.map(packagePath => {
     return {
-      find:  new RegExp(`^@bdp-lib-ui\\/bdp-${packagePath}(\\/(dist))?$`),
+      find:  new RegExp(`^@bdp-common-ui\\/bdp-${packagePath}(\\/(dist))?$`),
       replacement: path.join(projectPath, `/${packagePath}/index`)
     }
   })

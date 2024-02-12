@@ -12,7 +12,7 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@bdp-lib-ui/*": [
+      "@bdp-common-ui/*": [
         "./packages/*",
         "./*"
       ]

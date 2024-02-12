@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: bdp-lib-ui
+  name: bdp-common-ui
   text: 前端组件库
-  tagline: 基于 ant-design-vue-v3.2.2 、 element-plus 、 ant-design 框架进行功能扩展，提供更接近业务场景的组件。
+  tagline: 基于 element-ui 、 element-plus 、 ant-design 框架进行功能扩展，提供更接近业务场景的组件。
   image:
-    src: /images/bdp-lib-icon.svg
+    src: /images/much-more-icon.svg
   actions:
     - theme: brand
       text:  vue3-快速开始
@@ -14,9 +14,9 @@ hero:
     - theme: brand
       text:  vue2-快速开始
       link: /zh-CN/guide/elu-install
-#    - theme: alt
-#      text:  掘金主页
-#      link: https://juejin.cn/user/3544481218962183
+    - theme: alt
+      text:  掘金主页
+      link: https://juejin.cn/user/3544481218962183
 
 features:
   - icon: ⚡️

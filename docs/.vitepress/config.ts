@@ -2,11 +2,12 @@ import { defineConfig } from 'vitepress'
 import nav from './configs/nav'
 import sidebar from './configs/sidebar'
 import footer from './configs/footer'
+import { mdPlugin } from './configs/plugins'
 
 const base = '/'
 
 export default defineConfig({
-  title: 'bdp-lib-ui',
+  title: 'bdp-common-ui',
   description: '',
   appearance: false,
   base,
@@ -15,12 +16,12 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: '/images/bdp-lib-icon.svg'
+        href: '/images/much-more-icon.svg'
       }
     ]
   ],
   themeConfig: {
-    logo: '/images/bdp-lib-icon.svg',
+    logo: '/images/much-more-icon.svg',
     nav,
     sidebar,
     footer
