@@ -8,7 +8,7 @@ test/scripts/cypress/support
 results/
 site/dist
 docs/dist
-packages/**/dist
+packages/*/dist
 .idea
 es
 lib
