@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: bdp-common-ui
+  name: bdp-mid-ui
   text: 前端组件库
   tagline: 基于 element-ui 、 element-plus 、 ant-design 框架进行功能扩展，提供更接近业务场景的组件。
   image:

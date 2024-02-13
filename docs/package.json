@@ -1,5 +1,5 @@
 {
-  "name": "@bdp-common-ui/docs",
+  "name": "@bdp-mid-ui/docs",
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev",

@@ -2,11 +2,11 @@
   "0 debug pnpm:scope": {
     "selected": 4,
     "total": 4,
-    "workspacePrefix": "F:\\code\\backup\\bdp-common-ui"
+    "workspacePrefix": "F:\\code\\backup\\bdp-mid-ui"
   },
   "1 debug pnpm:package-manifest": {
     "initial": {
-      "name": "@bdp-common-ui/bdp-ant-design-vue-v3.2.20",
+      "name": "@bdp-mid-ui/bdp-ant-design-vue-v3.2.20",
       "version": "1.0.6",
       "description": "二次封装 ant-design-vue-v3.2.20",
       "main": "dist/bdp-ant-design-vue-v3.2.20.cjs.js",
@@ -44,11 +44,11 @@
         "less-vars-to-js": "1.3.0"
       }
     },
-    "prefix": "F:\\code\\backup\\bdp-common-ui\\packages\\ant-design-vue-v3.2.2"
+    "prefix": "F:\\code\\backup\\bdp-mid-ui\\packages\\ant-design-vue-v3.2.2"
   },
   "2 debug pnpm:package-manifest": {
     "initial": {
-      "name": "@bdp-common-ui/bdp-shared",
+      "name": "@bdp-mid-ui/bdp-shared",
       "version": "1.0.6",
       "description": "共享工具",
       "main": "dist/bdp-shared.cjs.js",
@@ -65,11 +65,11 @@
         "vite": "3.1.2"
       }
     },
-    "prefix": "F:\\code\\backup\\bdp-common-ui\\packages\\shared"
+    "prefix": "F:\\code\\backup\\bdp-mid-ui\\packages\\shared"
   },
   "3 debug pnpm:package-manifest": {
     "initial": {
-      "name": "@bdp-common-ui/bdp-ant-design-vue-v2.2.0",
+      "name": "@bdp-mid-ui/bdp-ant-design-vue-v2.2.0",
       "version": "1.0.6",
       "description": "二次封装 ant-design-vue-v2.2.0",
       "main": "dist/bdp-ant-design-vue-v2.2.0.cjs.js",
@@ -107,38 +107,38 @@
         "less-vars-to-js": "1.3.0"
       }
     },
-    "prefix": "F:\\code\\backup\\bdp-common-ui\\packages\\ant-design-vue-v2.2.0"
+    "prefix": "F:\\code\\backup\\bdp-mid-ui\\packages\\ant-design-vue-v2.2.0"
   },
   "4 debug pnpm:context": {
     "currentLockfileExists": false,
     "storeDir": "F:\\.pnpm-store\\v3",
-    "virtualStoreDir": "F:\\code\\backup\\bdp-common-ui\\packages\\ant-design-vue-v3.2.2\\node_modules\\.pnpm"
+    "virtualStoreDir": "F:\\code\\backup\\bdp-mid-ui\\packages\\ant-design-vue-v3.2.2\\node_modules\\.pnpm"
   },
   "5 debug pnpm:stage": {
-    "prefix": "F:\\code\\backup\\bdp-common-ui\\packages\\ant-design-vue-v3.2.2",
+    "prefix": "F:\\code\\backup\\bdp-mid-ui\\packages\\ant-design-vue-v3.2.2",
     "stage": "resolution_started"
   },
   "6 debug pnpm:context": {
     "currentLockfileExists": false,
     "storeDir": "F:\\.pnpm-store\\v3",
-    "virtualStoreDir": "F:\\code\\backup\\bdp-common-ui\\packages\\ant-design-vue-v2.2.0\\node_modules\\.pnpm"
+    "virtualStoreDir": "F:\\code\\backup\\bdp-mid-ui\\packages\\ant-design-vue-v2.2.0\\node_modules\\.pnpm"
   },
   "7 debug pnpm:stage": {
-    "prefix": "F:\\code\\backup\\bdp-common-ui\\packages\\ant-design-vue-v2.2.0",
+    "prefix": "F:\\code\\backup\\bdp-mid-ui\\packages\\ant-design-vue-v2.2.0",
     "stage": "resolution_started"
   },
   "8 debug pnpm:context": {
     "currentLockfileExists": false,
     "storeDir": "F:\\.pnpm-store\\v3",
-    "virtualStoreDir": "F:\\code\\backup\\bdp-common-ui\\packages\\shared\\node_modules\\.pnpm"
+    "virtualStoreDir": "F:\\code\\backup\\bdp-mid-ui\\packages\\shared\\node_modules\\.pnpm"
   },
   "9 debug pnpm:stage": {
-    "prefix": "F:\\code\\backup\\bdp-common-ui\\packages\\shared",
+    "prefix": "F:\\code\\backup\\bdp-mid-ui\\packages\\shared",
     "stage": "resolution_started"
   },
   "10 debug pnpm:package-manifest": {
     "initial": {
-      "name": "bdp-common-ui",
+      "name": "bdp-mid-ui",
       "version": "1.0.6",
       "description": "中台组件库",
       "scripts": {
@@ -164,15 +164,15 @@
         "vite": "^3.1.2"
       }
     },
-    "prefix": "F:\\code\\backup\\bdp-common-ui"
+    "prefix": "F:\\code\\backup\\bdp-mid-ui"
   },
   "11 debug pnpm:context": {
     "currentLockfileExists": false,
     "storeDir": "F:\\.pnpm-store\\v3",
-    "virtualStoreDir": "F:\\code\\backup\\bdp-common-ui\\node_modules\\.pnpm"
+    "virtualStoreDir": "F:\\code\\backup\\bdp-mid-ui\\node_modules\\.pnpm"
   },
   "12 debug pnpm:stage": {
-    "prefix": "F:\\code\\backup\\bdp-common-ui",
+    "prefix": "F:\\code\\backup\\bdp-mid-ui",
     "stage": "resolution_started"
   },
   "13 debug pnpm:request-retry": {
@@ -504,7 +504,7 @@
       "type": "range"
     },
     "pkgsStack": [],
-    "prefix": "F:\\code\\backup\\bdp-common-ui",
+    "prefix": "F:\\code\\backup\\bdp-mid-ui",
     "err": {
       "name": "pnpm",
       "message": "GET https://npm.taobao.org/chalk: request to https://npm.taobao.org/chalk failed, reason: certificate has expired",

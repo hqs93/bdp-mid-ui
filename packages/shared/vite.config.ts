@@ -14,7 +14,7 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
       },
       lib: {
         entry: path.resolve(__dirname, './index.ts'),
-        name: 'bdpUi',
+        name: 'bdpMidUi',
         fileName: 'bdp-shared',
         formats: ['es', 'cjs', 'umd', 'iife']
       },

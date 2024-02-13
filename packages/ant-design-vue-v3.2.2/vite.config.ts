@@ -32,7 +32,7 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
       },
       lib: {
         entry: resolve(__dirname, './components/index.ts'),
-        name: 'bdpUi',
+        name: 'bdpMidUi',
         fileName: 'bdp-ant-design-vue-v3.2.2',
         formats: ['es', 'cjs', 'umd', 'iife']
       },

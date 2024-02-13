@@ -7,7 +7,7 @@ import { mdPlugin } from './configs/plugins'
 const base = '/'
 
 export default defineConfig({
-  title: 'bdp-common-ui',
+  title: 'bdp-mid-ui',
   description: '',
   appearance: false,
   base,
