@@ -1,6 +1,6 @@
 {
   "name": "@bdp-common-ui/bdp-shared",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": "共享工具",
   "main": "dist/bdp-shared.cjs.js",
   "moudle": "dist/bdp-shared.es.js",
