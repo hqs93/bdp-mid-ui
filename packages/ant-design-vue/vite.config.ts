@@ -34,7 +34,8 @@ export default defineConfig( async ({ command, mode }) => {
         entry: resolve(__dirname, './components/index.ts'),
         name: 'bdpMidUi',
         fileName: 'bdp-ant-design-vue',
-        formats: ['es', 'cjs']
+        // formats: ['es', 'cjs']
+        formats: ['es', 'cjs', 'umd', 'iife']
       },
       outDir: '../../dist/bdp-ant-design-vue',
     },

@@ -1,6 +1,6 @@
 {
   "name": "bdp-mid-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "中台组件库",
   "scripts": {
     "docs:dev": "pnpm run -C docs docs:dev",
@@ -13,7 +13,7 @@
     "release": "node scripts/release.ts"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.com/"
   },
   "keywords": [],
   "author": "",
