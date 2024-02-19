@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bdp-mid-ui/bdp-ant-design-vue-v3.2.20": "workspace:*",
+    "@bdp-mid-ui/bdp-ant-design-vue": "workspace:*",
     "@vueuse/core": "^8.7.5",
     "element-plus": "^2.2.8",
     "less": "^4.1.3",

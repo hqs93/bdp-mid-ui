@@ -83,7 +83,7 @@ const decoded = computed(() => {
 
 const baseUrl = {
   'ant-design-vue-v2.2.0': import.meta.env.VITE_ANTV2_DEV_BASE,
-  'ant-design-vue-v3.2.2': import.meta.env.VITE_ANTV3_DEV_BASE,
+  'ant-design-vue': import.meta.env.VITE_ANTV_DEV_BASE,
   'shared': import.meta.env.VITE_SHARED_DEV_BASE
 }
 

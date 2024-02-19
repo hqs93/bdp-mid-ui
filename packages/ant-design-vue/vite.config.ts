@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { Alias, ConfigEnv, defineConfig, UserConfig } from "vite";
 import {alias} from '../../scripts'
 
-export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserConfig> => {
+export default defineConfig( async ({ command, mode }) => {
   // let docsBuild = {}
   // if (mode === 'docs') {
   //   docsBuild.base = './'
@@ -33,14 +33,14 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
       lib: {
         entry: resolve(__dirname, './components/index.ts'),
         name: 'bdpMidUi',
-        fileName: 'bdp-ant-design-vue-v3.2.2',
-        formats: ['es', 'cjs', 'umd', 'iife']
+        fileName: 'bdp-ant-design-vue',
+        formats: ['es', 'cjs']
       },
-      outDir: '../../dist/bdp-ant-design-vue-v3.2.2',
+      outDir: '../../dist/bdp-ant-design-vue',
     },
     resolve: {
       alias: [
-        ...await alias() as Alias[]
+        ...await alias()
         // { find: /^~/, replacement: '' }
       ],
     },
