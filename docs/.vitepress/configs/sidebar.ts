@@ -1,9 +1,6 @@
 import elementPlusSideBar from "../pages/element-plus.json"
 import elementUiSideBar from "../pages/element-ui.json"
 import antDesignSideBar from "../pages/ant-design.json"
-'ant-design-vue-v2.2.0': import.meta.env.VITE_ANTV2_DEV_BASE,
-    'ant-design-vue': import.meta.env.VITE_ANTV_DEV_BASE,
-    'shared': import.meta.env.VITE_SHARED_DEV_BASE
 export default {
   '/zh-CN/guide/': [
     {

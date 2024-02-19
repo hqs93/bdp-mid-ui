@@ -1,6 +1,6 @@
 {
   "name": "@bdp-mid-ui/bdp-ant-design-vue",
-  "version": "1.0.3",
+  "version": "1.0.31",
   "description": "二次封装 ant-design-vue",
   "main": "dist/bdp-ant-design-vue.cjs.js",
   "moudle": "dist/bdp-ant-design-vue.es.js",
