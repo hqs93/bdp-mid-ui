@@ -1,2 +1,2 @@
 // export * from './BdpTree/index'
-// export * from './useRenderChart'
+export * from './useRenderChart'

@@ -1,16 +1,16 @@
 import { resolve } from "path";
 import vue from '@vitejs/plugin-vue'
-import {Alias, BuildOptions, ConfigEnv, defineConfig, UserConfig} from "vite";
+import { Alias, ConfigEnv, defineConfig, UserConfig } from "vite";
 import {alias} from '../../scripts'
 
 export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserConfig> => {
-  let docsBuild: {base?: string, build?: BuildOptions} = {}
-  if (mode === 'docs') {
-    docsBuild.base = './'
-    docsBuild.build = {
-      outDir: '../../docs/.vitepress/dist/bdp-ant-design-vue'
-    }
-  }
+  // let docsBuild = {}
+  // if (mode === 'docs') {
+  //   docsBuild.base = './'
+  //   docsBuild.build = {
+  //     outDir: '../../docs/.vitepress/dist/element-plus'
+  //   }
+  // }
   return {
     server: {
       port: 3200
@@ -25,6 +25,7 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
       },
     },
     plugins: [vue()],
+    base: './',
     build: {
       rollupOptions: {
         external: ['ant-design-vue', 'vue', 'xe-utils']
@@ -32,9 +33,10 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
       lib: {
         entry: resolve(__dirname, './components/index.ts'),
         name: 'bdpMidUi',
-        fileName: 'bdp-ant-design-vue',
+        fileName: 'bdp-ant-design-vue-v3.2.2',
         formats: ['es', 'cjs', 'umd', 'iife']
       },
+      outDir: '../../dist/bdp-ant-design-vue-v3.2.2',
     },
     resolve: {
       alias: [
@@ -42,6 +44,6 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
         // { find: /^~/, replacement: '' }
       ],
     },
-    ...docsBuild
+    // ...docsBuild
   }
 })

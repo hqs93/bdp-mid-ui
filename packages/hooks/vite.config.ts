@@ -1,21 +1,15 @@
 import { resolve } from "path";
 import vue from '@vitejs/plugin-vue'
-import {Alias, BuildOptions, ConfigEnv, defineConfig, UserConfig} from "vite";
+import { Alias, ConfigEnv, defineConfig, UserConfig } from "vite";
 import {alias} from '../../scripts'
 
 export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserConfig> => {
-  let docsBuild: {base?: string, build?: BuildOptions} = {}
-  if (mode === 'docs') {
-    docsBuild.base = './'
-    docsBuild.build = {
-      outDir: '../../docs/.vitepress/dist/bdp-hooks'
-    }
-  }
   return {
     server: {
       port: 3400
     },
     plugins: [vue()],
+    base: './',
     build: {
       rollupOptions: {
         external: ['echarts', 'vue']
@@ -26,6 +20,7 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
         fileName: 'bdp-hooks',
         formats: ['es', 'cjs', 'umd', 'iife']
       },
+      outDir: '../../dist/bdp-hooks',
     },
     resolve: {
       alias: [
