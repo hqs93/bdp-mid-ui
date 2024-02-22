@@ -12,15 +12,15 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
     base: './',
     build: {
       rollupOptions: {
-        external: ['echarts', 'vue']
+        external: ['vue']
       },
       lib: {
-        entry: resolve(__dirname, './components/index.ts'),
+        entry: resolve(__dirname, './index.ts'),
         name: 'bdpMidUi',
         fileName: 'bdp-hooks',
         formats: ['es', 'cjs', 'umd', 'iife']
       },
-      outDir: '../../dist/bdp-hooks',
+      // outDir: '../../dist/bdp-hooks',
     },
     resolve: {
       alias: [

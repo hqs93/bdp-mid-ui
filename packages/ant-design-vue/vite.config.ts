@@ -28,15 +28,15 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
     base: './',
     build: {
       rollupOptions: {
-        external: ['ant-design-vue', 'vue', 'xe-utils']
+        external: ['vue', 'xe-utils']
       },
       lib: {
-        entry: resolve(__dirname, './components/index.ts'),
+        entry: resolve(__dirname, './index.ts'),
         name: 'bdpMidUi',
-        fileName: 'bdp-ant-design-vue-v3.2.2',
+        fileName: 'bdp-ant-design-vue',
         formats: ['es', 'cjs', 'umd', 'iife']
       },
-      outDir: '../../dist/bdp-ant-design-vue-v3.2.2',
+      // outDir: '../../dist/bdp-ant-design-vue',
     },
     resolve: {
       alias: [

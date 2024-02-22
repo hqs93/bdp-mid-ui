@@ -18,7 +18,7 @@ export default defineConfig( async ({ command, mode }: ConfigEnv): Promise<UserC
         fileName: 'bdp-shared',
         formats: ['es', 'cjs', 'umd', 'iife']
       },
-      outDir: '../../dist/bdp-shared',
+      // outDir: '../../dist/bdp-shared',
     },
     resolve: {
       alias: await alias()

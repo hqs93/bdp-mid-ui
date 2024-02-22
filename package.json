@@ -5,16 +5,20 @@
   "scripts": {
     "docs:dev": "pnpm run -C docs docs:dev",
     "docs:build": "pnpm run -C docs docs:build && pnpm run -C packages/ant-design-vue-v2.2.0 docs:build",
-    "build": "pnpm run build:shared && pnpm run build:antdv2.2.0 && pnpm run build:antdv3.2.2",
+    "build": "pnpm run build:shared && pnpm run build:antdv2.2.0 && pnpm run build:antdv && pnpm run build:hooks",
+    "build:hooks": "pnpm run -C packages/hooks build",
     "build:shared": "pnpm run -C packages/shared build",
+    "build:antdv": "pnpm run -C packages/ant-design-vue build",
     "build:antdv2.2.0": "pnpm run -C packages/ant-design-vue-v2.2.0 build",
-    "build:antdv3.2.2": "pnpm run -C packages/ant-design-vue-v3.2.2 build",
     "release": "node scripts/release.ts"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "keywords": [],
+  "keywords": ["bdp-mid-ui"],
+  "workspaces": [
+    "packages/*/dist/*"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

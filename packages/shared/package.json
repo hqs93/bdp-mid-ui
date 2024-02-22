@@ -2,8 +2,14 @@
   "name": "@bdp-mid-ui/bdp-shared",
   "version": "1.0.0",
   "description": "共享工具",
-  "main": "dist/bdp-shared.cjs.js",
-  "moudle": "dist/bdp-shared.es.js",
+  "main": "dist/bdp-shared.umd.js",
+  "moudle": "dist/bdp-shared.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/bdp-shared.mjs",
+      "require": "./dist/bdp-shared.umd.js"
+    }
+  },
   "author": "",
   "license": "ISC",
   "scripts": {
