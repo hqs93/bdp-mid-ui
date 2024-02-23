@@ -24,9 +24,15 @@
       "import": "./packages/bdp-ant-design-vue/dist/bdp-ant-design-vue.mjs",
       "require": "./packages/bdp-ant-design-vue/dist/bdp-ant-design-vue.umd.js"
     },
+    "./ant-design-vue/antd.css": {
+      "import": "./packages/bdp-ant-design-vue/node_modules/ant-design-vue/dist/antd.css"
+    },
     "./ant-design-vue-v2.2.0": {
       "import": "./packages/ant-design-vue-v2.2.0/dist/ant-design-vue-v2.2.0.mjs",
       "require": "./packages/ant-design-vue-v2.2.0/dist/ant-design-vue-v2.2.0.umd.js"
+    },
+    "./ant-design-vue-v2.2.0/antd.css": {
+      "import": "./packages/ant-design-vue-v2.2.0/node_modules/ant-design-vue/dist/antd.css"
     },
     "./hooks": {
       "import": "./packages/hooks/dist/hooks.mjs",
