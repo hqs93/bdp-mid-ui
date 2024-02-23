@@ -1,6 +1,6 @@
 {
   "name": "bdp-mid-ui",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "中台组件库",
   "scripts": {
     "docs:dev": "pnpm run -C docs docs:dev",
@@ -19,6 +19,24 @@
   "workspaces": [
     "packages/*/dist/*"
   ],
+  "exports": {
+    "./ant-design-vue": {
+      "import": "./packages/bdp-ant-design-vue/dist/bdp-ant-design-vue.mjs",
+      "require": "./packages/bdp-ant-design-vue/dist/bdp-ant-design-vue.umd.js"
+    },
+    "./ant-design-vue-v2.2.0": {
+      "import": "./packages/ant-design-vue-v2.2.0/dist/ant-design-vue-v2.2.0.mjs",
+      "require": "./packages/ant-design-vue-v2.2.0/dist/ant-design-vue-v2.2.0.umd.js"
+    },
+    "./hooks": {
+      "import": "./packages/hooks/dist/hooks.mjs",
+      "require": "./packages/hooks/dist/hooks.umd.js"
+    },
+    "./shared": {
+      "import": "./packages/shared/dist/shared.mjs",
+      "require": "./packages/shared/dist/shared.umd.js"
+    }
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

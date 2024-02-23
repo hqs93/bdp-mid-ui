@@ -1,6 +1,6 @@
 {
   "name": "@bdp-mid-ui/bdp-hooks",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "二次封装 vue-hooks-plus & 自定义hooks",
   "main": "dist/bdp-hooks.umd.js",
   "moudle": "dist/bdp-hooks.mjs",
